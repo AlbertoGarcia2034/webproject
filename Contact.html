@@ -1,16 +1,45 @@
-<DOCTYPE! html>
+<!doctype html>
 <html>
-	<head>
-			<meta charset = "UTF-8" />
-			<title>	"Contact para GIT"	</title>
-	</head>
-	
-	<body>
-	<h2><marquee> "Archivo Contact Modificado "</marquee> </h2>
-	<hr/>
-	<hr/>
-	<p> <a href ="about.html "> Entrar </a> </p>
-		
-	</body>
-</html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Contacto - Script Personal</title>
 
+<!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <h2><marquee> "Información de contacto"</marquee> </h2>
+  <div id="Formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+   <label for="nombre">Nombre</label>
+   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+   <label for="email">Email</label>
+   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   <label for="Tema">Tema</label>
+   <input name="Tema" type="text" id="Tema" placeholder="Tema" tabindex="3" title="Tema">
+   <br>
+   <label for="Comentario">Comentario</label>
+   <textarea name="Comentario" rows="4" id="Comentario" placeholder="Comentario" tabindex="6"></textarea>
+   <br>
+   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+</body>
+</html>
